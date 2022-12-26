@@ -838,14 +838,11 @@ function init() {
 	);
 	
 
-	
 	// Begin simulation
 	togglePause(false);
 	
 	// initial render
 	renderApp(store.state);
-
-	toggleFullscreen();
 
 	// Apply initial config
 	configDidUpdate();
