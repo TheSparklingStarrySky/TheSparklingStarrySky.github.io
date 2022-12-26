@@ -837,12 +837,16 @@ function init() {
 		.map(value => ({ value: value.toFixed(2), label: `${value*100}%` }))
 	);
 	
+
+	
 	// Begin simulation
 	togglePause(false);
 	
 	// initial render
 	renderApp(store.state);
-	
+
+	toggleFullscreen();
+
 	// Apply initial config
 	configDidUpdate();
 
